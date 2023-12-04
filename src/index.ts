@@ -12,6 +12,7 @@ const models: any[] = [
   "@cf/mistral/mistral-7b-instruct-v0.1",
   "@cf/meta/llama-2-7b-chat-fp16",
   "@cf/meta/llama-2-7b-chat-int8",
+  "@hf/thebloke/codellama-7b-instruct-awq",
 ];
 const app = new Hono<{ Bindings: Bindings }>();
 app.use("*", cors());
