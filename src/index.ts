@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import { cors } from "hono/cors";
-import { Ai } from "@cloudflare/ai";
+import { Ai, modelMappings } from "@cloudflare/ai";
 import { Bindings } from "./types/bindings";
 import { Buffer } from "buffer";
 import streamOpenAI from "./gpt";
@@ -9,13 +9,13 @@ const ssePrefix = "data:";
 const sseEnd = `${ssePrefix} [DONE]`;
 const models: any[] = [
   "text-davinci-002-render-sha", // openai
-  "@cf/mistral/mistral-7b-instruct-v0.1",
-  "@cf/meta/llama-2-7b-chat-fp16",
-  "@cf/meta/llama-2-7b-chat-int8",
-  "@hf/thebloke/codellama-7b-instruct-awq",
+  ...modelMappings["text-generation"].models,
 ];
 const app = new Hono<{ Bindings: Bindings }>();
 app.use("*", cors());
+app.get("/models", async (c) => {
+  return c.json(models);
+});
 app.get("/", async (c) => {
   const ai = new Ai(c.env.AI);
   const modelIndex = Number(c.req.query("model"));

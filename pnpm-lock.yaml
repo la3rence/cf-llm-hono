@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   "@cloudflare/ai":
-    specifier: ^1.0.33
-    version: 1.0.33
+    specifier: 1.0.36
+    version: 1.0.36
   ai:
     specifier: ^2.2.27
     version: 2.2.27(react@18.2.0)(solid-js@1.8.6)(svelte@4.2.8)(vue@3.3.9)
@@ -83,10 +83,10 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@cloudflare/ai@1.0.33:
+  /@cloudflare/ai@1.0.36:
     resolution:
       {
-        integrity: sha512-mTajdOFinz0gaWhC2hd0ezx2dTIIiZMjCgfh+0kXCGc3xm+Aony8Xj9AopfeRUlsdwbcqVj+RfNhw6P4vr9+Ww==,
+        integrity: sha512-CXBkVBvOHk1MvdAMJ1ThCUm0xCxlw/Z14YpICM7qTo9TMhUzwyYA3gyrN2cKUDDV/vsWsVY6plon5LKXqHCQ6g==,
       }
     dev: false
 
