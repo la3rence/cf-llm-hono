@@ -10,13 +10,19 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Publish
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v2.4.0
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 8
+          
       - name: Setup Node.js 20
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20.x
           cache: "pnpm"
-
       - name: Install dependencies
         run: pnpm install
 
