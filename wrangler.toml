@@ -1,0 +1,5 @@
+name = "cf-hono-llm"
+compatibility_date = "2023-01-01"
+
+[ai]
+binding = "AI"
