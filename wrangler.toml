@@ -4,3 +4,7 @@ main = "src/index.ts"
 
 [ai]
 binding = "AI"
+
+# [vars]
+# API_KEY = "YOUR_JWT_TOKEN"
+# GPT_BASE = "GPT_HTTP_URL"
