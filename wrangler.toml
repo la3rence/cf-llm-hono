@@ -1,10 +1,11 @@
 name = "cf-hono-llm"
-compatibility_date = "2023-01-01"
+compatibility_date = "2023-12-07"
 main = "src/index.ts"
 
 [ai]
 binding = "AI"
 
 # [vars]
+# Please set them as the secret in cloudflare
 # API_KEY = "YOUR_JWT_TOKEN"
 # GPT_BASE = "GPT_HTTP_URL"

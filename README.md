@@ -21,10 +21,15 @@ pnpm run deploy
 ## Models
 
 ```txt
-text-davinci-002-render-sha
-@cf/mistral/mistral-7b-instruct-v0.1
-@cf/meta/llama-2-7b-chat-fp16
-@cf/meta/llama-2-7b-chat-int8
+"text-davinci-002-render-sha",
+"@cf/meta/llama-2-7b-chat-int8",
+"@cf/mistral/mistral-7b-instruct-v0.1",
+"@cf/meta/llama-2-7b-chat-fp16",
+"@hf/thebloke/llama-2-13b-chat-awq",
+"@hf/thebloke/zephyr-7b-beta-awq",
+"@hf/thebloke/mistral-7b-instruct-v0.1-awq",
+"@hf/thebloke/codellama-7b-instruct-awq"
+and more...
 ```
 
 ## Vercel AI SDK
