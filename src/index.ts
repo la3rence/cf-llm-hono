@@ -13,9 +13,22 @@ const models: any[] = [
 ];
 const app = new Hono<{ Bindings: Bindings }>();
 app.use("*", cors());
+
 app.get("/models", async (c) => {
   return c.json(models);
 });
+
+app.get("/translate", async (c) => {
+  const ai = new Ai(c.env.AI);
+  const inputs = {
+    text: c.req.query("text") || "翻译",
+    source_lang: "chinese",
+    target_lang: "english",
+  };
+  const response = await ai.run("@cf/meta/m2m100-1.2b", inputs);
+  return c.json({ inputs, response });
+});
+
 app.get("/", async (c) => {
   const ai = new Ai(c.env.AI);
   const modelIndex = Number(c.req.query("model"));
