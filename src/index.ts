@@ -29,6 +29,22 @@ app.get("/translate", async (c) => {
   return c.json({ inputs, response });
 });
 
+app.get("/diffusion", async (c) => {
+  const ai = new Ai(c.env.AI);
+  const inputs = {
+    prompt: c.req.query("text") || "cat",
+  };
+  const response = await ai.run(
+    "@cf/stabilityai/stable-diffusion-xl-base-1.0",
+    inputs,
+  );
+  return new Response(response, {
+    headers: {
+      "content-type": "image/png",
+    },
+  });
+});
+
 app.get("/", async (c) => {
   const ai = new Ai(c.env.AI);
   const modelIndex = Number(c.req.query("model"));
