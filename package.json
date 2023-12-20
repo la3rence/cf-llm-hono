@@ -5,7 +5,7 @@
     "fmt": "prettier --write ."
   },
   "dependencies": {
-    "@cloudflare/ai": "1.0.41",
+    "@cloudflare/ai": "1.0.46",
     "ai": "^2.2.27",
     "buffer": "^6.0.3",
     "hono": "^3.10.0",
