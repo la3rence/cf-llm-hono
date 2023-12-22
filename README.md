@@ -9,7 +9,7 @@ name = "my-llm-api"
 binding = "AI"
 
 [vars]
-API_KEY = ""
+GPT_API_KEY = ""
 GPT_BASE = ""
 ```
 
@@ -22,6 +22,7 @@ pnpm run deploy
 
 ```txt
 "text-davinci-002-render-sha",
+"gemini-pro",
 "@cf/meta/llama-2-7b-chat-int8",
 "@cf/mistral/mistral-7b-instruct-v0.1",
 "@cf/meta/llama-2-7b-chat-fp16",
