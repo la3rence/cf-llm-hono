@@ -10,6 +10,7 @@ export default async function workerAI(
   model: any,
   messages: any[],
 ) {
+  console.log(c.env.AI);
   const ai = new Ai(c.env.AI);
   const response = await ai.run(
     model, // models[modelIndex], // modelIndex > 1, use LLAMA
