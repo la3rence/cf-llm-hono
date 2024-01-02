@@ -9,7 +9,7 @@
     "@google/generative-ai": "^0.1.3",
     "ai": "2.2.30",
     "buffer": "^6.0.3",
-    "hono": "^3.10.0",
+    "hono": "^3.11.7",
     "openai": "^4.20.1"
   },
   "devDependencies": {
