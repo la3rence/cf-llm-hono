@@ -2,7 +2,7 @@ import { Context, Hono } from "hono";
 import { cors } from "hono/cors";
 import { Ai, modelMappings } from "@cloudflare/ai";
 import { Bindings } from "./types/bindings";
-import streamOpenAI from "./gpt";
+import streamOpenAI, { gptStatus } from "./gpt";
 import gemini from "./gemini";
 import workerAI from "./cf";
 
@@ -91,6 +91,16 @@ app.post("/gemini", async (c) => {
   const body = await c.req.json();
   const messages = body["messages"];
   return handleMessagesWithIndex(c, messages, 1);
+});
+
+app.get("/gpt/status", async (c) => {
+  const response = await gptStatus(
+    c.env.GPT_BASE as string,
+    c.env.GPT_API_KEY as string,
+  );
+  const json = await response.json();
+  c.status(response.status);
+  return c.json(json);
 });
 
 app.onError((e, c) => {
