@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@cloudflare/ai':
-    specifier: 1.0.49
-    version: 1.0.49
+    specifier: 1.0.50
+    version: 1.0.50
   '@google/generative-ai':
     specifier: ^0.1.3
     version: 0.1.3
@@ -72,8 +72,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@cloudflare/ai@1.0.49:
-    resolution: {integrity: sha512-utbg4dVABaIZOX+MLD/lkXyMwtK/LeRJCtgnCw0BR80lWFf6u6gJbWel0zbGENxZs+Vyn8DvcxO7KiuH9NbzGQ==}
+  /@cloudflare/ai@1.0.50:
+    resolution: {integrity: sha512-lgTrP514G9VRXEhWWDQ80gTs5latLBzoc8ouJKOEKRw6SPtEjHHrMkPv+WOAsamBOnXCjdBV63MVE2VCJ6PE7Q==}
     dev: false
 
   /@cloudflare/kv-asset-handler@0.2.0:
