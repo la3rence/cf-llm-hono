@@ -27,7 +27,7 @@ dependencies:
 devDependencies:
   '@cloudflare/workers-types':
     specifier: ^4.20230914.0
-    version: 4.20230914.0
+    version: 4.20240222.0
   prettier:
     specifier: ^3.1.0
     version: 3.2.5
@@ -127,8 +127,8 @@ packages:
     dev: true
     optional: true
 
-  /@cloudflare/workers-types@4.20230914.0:
-    resolution: {integrity: sha512-OVeN4lFVu1O0PJGZ2d0FwpK8lelFcr33qYOgCh77ErEYmEBO4adwnIxcIsdQbFbhF0ffN6joiVcljD4zakdaeQ==}
+  /@cloudflare/workers-types@4.20240222.0:
+    resolution: {integrity: sha512-luO0BdK3rLlCv3B240+cTrfqm+XSbHtpk+88aJtGwzyVK9QF/Xz8lBgE/oZZLN8nCTmOvxAZnszyxUuZ8GP8Cg==}
     dev: true
 
   /@esbuild-plugins/node-globals-polyfill@0.2.3(esbuild@0.17.19):
