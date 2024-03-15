@@ -18,8 +18,8 @@ dependencies:
     specifier: ^6.0.3
     version: 6.0.3
   hono:
-    specifier: ^3.11.7
-    version: 3.12.12
+    specifier: ^4.0.0
+    version: 4.1.0
   openai:
     specifier: ^4.20.1
     version: 4.29.2
@@ -870,8 +870,8 @@ packages:
       function-bind: 1.1.2
     dev: true
 
-  /hono@3.12.12:
-    resolution: {integrity: sha512-5IAMJOXfpA5nT+K0MNjClchzz0IhBHs2Szl7WFAhrFOsbtQsYmNynFyJRg/a3IPsmCfxcrf8txUGiNShXpK5Rg==}
+  /hono@4.1.0:
+    resolution: {integrity: sha512-9no6DCHb4ijB1tWdFXU6JnrnFgzwVZ1cnIcS1BjAFnMcjbtBTOMsQrDrPH3GXbkNEEEkj8kWqcYBy8Qc0bBkJQ==}
     engines: {node: '>=16.0.0'}
     dev: false
 
