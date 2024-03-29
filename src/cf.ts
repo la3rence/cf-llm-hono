@@ -9,7 +9,7 @@ const sseEnd = `${ssePrefix} [DONE]`;
 export default async function workerAI(
   c: Context,
   model: any,
-  messages: any[],
+  messages: any[]
 ) {
   console.log(c.env.AI);
   const ai = new Ai(c.env.AI);
@@ -18,10 +18,10 @@ export default async function workerAI(
     {
       messages,
       stream: true,
-    },
+    }
   );
   return stream(c, async (stream) => {
-    for (const chunk of await (response as Promise<any>)) {
+    for await (const chunk of response as any) {
       const str = Buffer.from(chunk).toString("utf-8");
       if (str != sseEnd) {
         const jsonstring = str.substring(ssePrefix.length);
