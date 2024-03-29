@@ -1,4 +1,7 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import {
+  GoogleGenerativeAI,
+  GenerateContentRequest,
+} from "@google/generative-ai";
 import { GoogleGenerativeAIStream, Message, StreamingTextResponse } from "ai";
 
 // convert messages from the Vercel AI SDK Format to the format
@@ -29,7 +32,9 @@ export default async function gemini(
   const genAI = new GoogleGenerativeAI(apiKey);
   const geminiStream = await genAI
     .getGenerativeModel({ model })
-    .generateContentStream(buildGoogleGenAIPrompt(messages));
+    .generateContentStream(
+      buildGoogleGenAIPrompt(messages) as GenerateContentRequest,
+    );
   const stream = GoogleGenerativeAIStream(geminiStream);
   return new StreamingTextResponse(stream);
 }

@@ -5,6 +5,7 @@ import { Bindings } from "./types/bindings";
 import streamOpenAI, { gptStatus } from "./gpt";
 import gemini from "./gemini";
 import workerAI from "./cf";
+import { StatusCode } from "hono/utils/http-status";
 
 const MODELS: any[] = [
   "text-davinci-002-render-sha", // openai
@@ -99,7 +100,7 @@ app.get("/gpt/status", async (c) => {
     c.env.GPT_API_KEY as string,
   );
   const json = await response.json();
-  c.status(response.status);
+  c.status(response.status as StatusCode);
   return c.json(json);
 });
 
