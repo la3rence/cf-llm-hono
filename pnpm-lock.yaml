@@ -22,7 +22,7 @@ dependencies:
     version: 4.2.2
   openai:
     specifier: ^4.20.1
-    version: 4.32.1
+    version: 4.32.2
 
 devDependencies:
   '@cloudflare/workers-types':
@@ -1046,8 +1046,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /openai@4.32.1:
-    resolution: {integrity: sha512-3e9QyCY47tgOkxBe2CSVKlXOE2lLkMa24Y0s3LYZR40yYjiBU9dtVze+C3mu1TwWDGiRX52STpQAEJZvRNuIrA==}
+  /openai@4.32.2:
+    resolution: {integrity: sha512-JXU5ttiL4liZJ2GRYvyqd/m9zA64bI8e6B5BtyKlbkcv5DAd5wiDgd0cQ1CIIdsEH90k5p3TdK6MyjnUhvOe7w==}
     hasBin: true
     dependencies:
       '@types/node': 18.19.29
