@@ -15,8 +15,8 @@ importers:
         specifier: ^0.7.0
         version: 0.7.1
       ai:
-        specifier: 3.0.23
-        version: 3.0.23(react@18.2.0)(solid-js@1.8.16)(svelte@4.2.14)(vue@3.4.22(typescript@5.4.5))(zod@3.22.4)
+        specifier: 3.0.24
+        version: 3.0.24(react@18.2.0)(solid-js@1.8.16)(svelte@4.2.14)(vue@3.4.22(typescript@5.4.5))(zod@3.22.4)
       buffer:
         specifier: ^6.0.3
         version: 6.0.3
@@ -354,8 +354,8 @@ packages:
     resolution: {integrity: sha512-5GG/5IbQQpC9FpkRGsSvZI5QYeSCzlJHdpBQntCsuTOxhKD8lqKhrleg2Yi7yvMIf82Ycmmqln9U8V9qwEiJew==}
     engines: {node: '>= 8.0.0'}
 
-  ai@3.0.23:
-    resolution: {integrity: sha512-VL8Fx9euEtffzIu0BpLDZkACB+oU6zj4vHXSsSoT5VfwAzE009FJedOMPK1M4u60RpYw/DgwlD7OLN7XQfvSHw==}
+  ai@3.0.24:
+    resolution: {integrity: sha512-x2enc2aIbOjsvC6N+xS8cTEiAPXGSzN1MjqNu4jo9YlBKmGR+83slScoXhgFZQnaHHeT9miPUVoMRqde11Bc8Q==}
     engines: {node: '>=18'}
     peerDependencies:
       react: ^18.2.0
@@ -1175,7 +1175,7 @@ snapshots:
     dependencies:
       humanize-ms: 1.2.1
 
-  ai@3.0.23(react@18.2.0)(solid-js@1.8.16)(svelte@4.2.14)(vue@3.4.22(typescript@5.4.5))(zod@3.22.4):
+  ai@3.0.24(react@18.2.0)(solid-js@1.8.16)(svelte@4.2.14)(vue@3.4.22(typescript@5.4.5))(zod@3.22.4):
     dependencies:
       '@ai-sdk/provider': 0.0.0
       '@ai-sdk/provider-utils': 0.0.1(zod@3.22.4)
