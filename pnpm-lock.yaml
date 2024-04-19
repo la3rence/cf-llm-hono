@@ -25,7 +25,7 @@ importers:
         version: 4.2.4
       openai:
         specifier: ^4.20.1
-        version: 4.38.1
+        version: 4.38.2
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20230914.0
@@ -684,8 +684,8 @@ packages:
   once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
 
-  openai@4.38.1:
-    resolution: {integrity: sha512-nmSKE9O2piuoh9+AgDqwGHojIFSxToQ2jJqwaxjbzz2ebdD5LYY9s+bMe25b18t4QEgvtgW70JfK8BU3xf5dRw==}
+  openai@4.38.2:
+    resolution: {integrity: sha512-M16ehj0D84Gjq5cjvBzXRb5X+UvtWlxPDRAWAWMC0EN+6nHqnULIn5fWWeiexDPup25FeSZYv/ldp8KefcZVJQ==}
     hasBin: true
 
   path-parse@1.0.7:
@@ -1501,7 +1501,7 @@ snapshots:
     dependencies:
       wrappy: 1.0.2
 
-  openai@4.38.1:
+  openai@4.38.2:
     dependencies:
       '@types/node': 18.19.31
       '@types/node-fetch': 2.6.11
