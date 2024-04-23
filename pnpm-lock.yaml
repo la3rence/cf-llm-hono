@@ -22,7 +22,7 @@ importers:
         version: 6.0.3
       hono:
         specifier: ^4.0.0
-        version: 4.2.6
+        version: 4.2.7
       openai:
         specifier: ^4.20.1
         version: 4.38.2
@@ -548,8 +548,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.2.6:
-    resolution: {integrity: sha512-AtbHZJYWsm+uFHLz0C6xltX7hjOV44a55gSEGBfoQOJ00KSxEUOoiIkmd+NXfapNX0j2GCKhqMmYeegBdHRwcQ==}
+  hono@4.2.7:
+    resolution: {integrity: sha512-k1xHi86tJnRIVvqhFMBDGFKJ8r5O+bEsT4P59ZK59r0F300Xd910/r237inVfuT/VmE86RQQffX4OYNda6dLXw==}
     engines: {node: '>=16.0.0'}
 
   humanize-ms@1.2.1:
@@ -1383,7 +1383,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.2.6: {}
+  hono@4.2.7: {}
 
   humanize-ms@1.2.1:
     dependencies:
