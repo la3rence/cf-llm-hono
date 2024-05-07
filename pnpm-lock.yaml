@@ -15,8 +15,8 @@ importers:
         specifier: ^0.10.0
         version: 0.10.0
       ai:
-        specifier: 3.0.32
-        version: 3.0.32(react@18.2.0)(solid-js@1.8.16)(svelte@4.2.14)(vue@3.4.22(typescript@5.4.5))(zod@3.23.6)
+        specifier: 3.1.1
+        version: 3.1.1(react@18.2.0)(solid-js@1.8.16)(svelte@4.2.14)(vue@3.4.22(typescript@5.4.5))(zod@3.23.6)
       buffer:
         specifier: ^6.0.3
         version: 6.0.3
@@ -39,8 +39,8 @@ importers:
 
 packages:
 
-  '@ai-sdk/provider-utils@0.0.3':
-    resolution: {integrity: sha512-13+4v62ylduGvwz8966SdnT1aoQRO4QkWzZJyVswdgmYeX2vrXuU4bssK578+FXIXc1jwi2hLZO8lqgLPT/xDA==}
+  '@ai-sdk/provider-utils@0.0.5':
+    resolution: {integrity: sha512-VVy9eQS+vS2j6cqTEQ9htMHz2nW/HFAkDXLvNFPoi1pZkviknJZEzb+DZUna6Od+jBf/TVA0HZwYnyGDaeI9cQ==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.0.0
@@ -48,8 +48,8 @@ packages:
       zod:
         optional: true
 
-  '@ai-sdk/provider@0.0.2':
-    resolution: {integrity: sha512-LDRx7TFWjuuW1V8bGCMvOk4ap5gNGeSxa6w65Y+pHskiLRk/nn+Z2xzMy1JjCTksUblu0i/plai4bOLgqkxJHA==}
+  '@ai-sdk/provider@0.0.3':
+    resolution: {integrity: sha512-0B8P6VZpJ6F9yS9BpmJBYSqIaIfeRtL5tD5SP+qgR8y0pPwalIbRMUFiLz9YUT6g70MJsCLpm/2/fX3cfAYCJw==}
     engines: {node: '>=18'}
 
   '@ampproject/remapping@2.3.0':
@@ -352,8 +352,8 @@ packages:
     resolution: {integrity: sha512-5GG/5IbQQpC9FpkRGsSvZI5QYeSCzlJHdpBQntCsuTOxhKD8lqKhrleg2Yi7yvMIf82Ycmmqln9U8V9qwEiJew==}
     engines: {node: '>= 8.0.0'}
 
-  ai@3.0.32:
-    resolution: {integrity: sha512-9HdSNfFUX02RxoWNsN/9HH/csfa+Hw+CZw7HOrMAhE/7f/DbEHeIbpfP1O7Bco6N9ZT/AznF5VjNsOpKEkP7BQ==}
+  ai@3.1.1:
+    resolution: {integrity: sha512-pJZc6q7SLd2/NenxN62iagMw9HHQ4Q8FyKqkrZUJntupRTHHgN3fL7exzJU/ICHDAbtn/EcJXOau6P61QgUtKQ==}
     engines: {node: '>=18'}
     peerDependencies:
       react: ^18.2.0
@@ -877,16 +877,16 @@ packages:
 
 snapshots:
 
-  '@ai-sdk/provider-utils@0.0.3(zod@3.23.6)':
+  '@ai-sdk/provider-utils@0.0.5(zod@3.23.6)':
     dependencies:
-      '@ai-sdk/provider': 0.0.2
+      '@ai-sdk/provider': 0.0.3
       eventsource-parser: 1.1.2
       nanoid: 3.3.6
       secure-json-parse: 2.7.0
     optionalDependencies:
       zod: 3.23.6
 
-  '@ai-sdk/provider@0.0.2':
+  '@ai-sdk/provider@0.0.3':
     dependencies:
       json-schema: 0.4.0
 
@@ -1124,10 +1124,10 @@ snapshots:
     dependencies:
       humanize-ms: 1.2.1
 
-  ai@3.0.32(react@18.2.0)(solid-js@1.8.16)(svelte@4.2.14)(vue@3.4.22(typescript@5.4.5))(zod@3.23.6):
+  ai@3.1.1(react@18.2.0)(solid-js@1.8.16)(svelte@4.2.14)(vue@3.4.22(typescript@5.4.5))(zod@3.23.6):
     dependencies:
-      '@ai-sdk/provider': 0.0.2
-      '@ai-sdk/provider-utils': 0.0.3(zod@3.23.6)
+      '@ai-sdk/provider': 0.0.3
+      '@ai-sdk/provider-utils': 0.0.5(zod@3.23.6)
       eventsource-parser: 1.1.2
       json-schema: 0.4.0
       jsondiffpatch: 0.6.0
