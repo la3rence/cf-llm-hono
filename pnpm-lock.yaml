@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@cloudflare/ai':
-        specifier: 1.1.0
-        version: 1.1.0
+        specifier: 1.2.1
+        version: 1.2.1
       '@google/generative-ai':
         specifier: ^0.10.0
         version: 0.10.0
@@ -73,8 +73,9 @@ packages:
     resolution: {integrity: sha512-6mQNsaLeXTw0nxYUYu+NSa4Hx4BlF1x1x8/PMFbiR+GBSr+2DkECc69b8hgy2frEodNcvPffeH8YfWd3LI6jhQ==}
     engines: {node: '>=6.9.0'}
 
-  '@cloudflare/ai@1.1.0':
-    resolution: {integrity: sha512-6j2aeelMfPj2YVj/zQBAj9PAbEZSrO/t+Wywy3Gvk93JsTlsZvEH+V9JYIZHynhSt0juuOrSWP9ju3vN6lUDMQ==}
+  '@cloudflare/ai@1.2.1':
+    resolution: {integrity: sha512-08Toi1590a8ohci6KQK6+Xw3eMz883qIkxKwKkrBMEpU0OpDemO8rFyhB2e8vk6LCZMKzEwA1Z+v/90/xY9Jjg==}
+    deprecated: 'Thanks for using @cloudflare/ai: This package has been deprecated in favor of the native binding, learn more here https://developers.cloudflare.com/workers-ai/configuration/bindings/ '
 
   '@cloudflare/kv-asset-handler@0.3.2':
     resolution: {integrity: sha512-EeEjMobfuJrwoctj7FA1y1KEbM0+Q1xSjobIEyie9k4haVEBB7vkDvsasw1pM3rO39mL2akxIAzLMUAtrMHZhA==}
@@ -909,7 +910,7 @@ snapshots:
       '@babel/helper-validator-identifier': 7.24.5
       to-fast-properties: 2.0.0
 
-  '@cloudflare/ai@1.1.0': {}
+  '@cloudflare/ai@1.2.1': {}
 
   '@cloudflare/kv-asset-handler@0.3.2':
     dependencies:
