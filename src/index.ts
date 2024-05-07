@@ -2,14 +2,12 @@ import { Context, Hono } from "hono";
 import { cors } from "hono/cors";
 import { Ai, modelMappings } from "@cloudflare/ai";
 import { Bindings } from "./types/bindings";
-import streamOpenAI, { gptStatus } from "./gpt";
-import gemini from "./gemini";
 import workerAI from "./cf";
-import { StatusCode } from "hono/utils/http-status";
+// import { StatusCode } from "hono/utils/http-status";
 
 const MODELS: any[] = [
-  "text-davinci-002-render-sha", // openai
-  "gemini-pro", // google
+  // "text-davinci-002-render-sha", // openai
+  // "gemini-pro", // google
   ...modelMappings["text-generation"].models,
 ];
 
@@ -59,18 +57,18 @@ const handleMessagesWithIndex = async (
   modelIndex: keyof [],
 ) => {
   // gpt 0
-  if (modelIndex === 0) {
-    return streamOpenAI(
-      c.env.GPT_BASE as string,
-      c.env.GPT_API_KEY as string,
-      MODELS[modelIndex],
-      messages,
-    );
-  }
-  // gemini 1
-  if (modelIndex === 1) {
-    return gemini(c.env.GOOGLE_API_KEY as string, MODELS[modelIndex], messages);
-  }
+  // if (modelIndex === 0) {
+  //   return streamOpenAI(
+  //     c.env.GPT_BASE as string,
+  //     c.env.GPT_API_KEY as string,
+  //     MODELS[modelIndex],
+  //     messages,
+  //   );
+  // }
+  // // gemini 1
+  // if (modelIndex === 1) {
+  //   return gemini(c.env.GOOGLE_API_KEY as string, MODELS[modelIndex], messages);
+  // }
   // cloudflare workers ai
   return workerAI(c, MODELS[modelIndex], messages);
 };
@@ -82,27 +80,27 @@ app.post("/", async (c) => {
   return handleMessagesWithIndex(c, messages, modelIndex);
 });
 
-app.post("/gpt", async (c) => {
-  const body = await c.req.json();
-  const messages = body["messages"];
-  return handleMessagesWithIndex(c, messages, 0);
-});
+// app.post("/gpt", async (c) => {
+//   const body = await c.req.json();
+//   const messages = body["messages"];
+//   return handleMessagesWithIndex(c, messages, 0);
+// });
 
-app.post("/gemini", async (c) => {
-  const body = await c.req.json();
-  const messages = body["messages"];
-  return handleMessagesWithIndex(c, messages, 1);
-});
+// app.post("/gemini", async (c) => {
+//   const body = await c.req.json();
+//   const messages = body["messages"];
+//   return handleMessagesWithIndex(c, messages, 1);
+// });
 
-app.get("/gpt/status", async (c) => {
-  const response = await gptStatus(
-    c.env.GPT_BASE as string,
-    c.env.GPT_API_KEY as string,
-  );
-  const json = await response.json();
-  c.status(response.status as StatusCode);
-  return c.json(json);
-});
+// app.get("/gpt/status", async (c) => {
+//   const response = await gptStatus(
+//     c.env.GPT_BASE as string,
+//     c.env.GPT_API_KEY as string,
+//   );
+//   const json = await response.json();
+//   c.status(response.status as StatusCode);
+//   return c.json(json);
+// });
 
 app.onError((e, c) => {
   console.error(e);
