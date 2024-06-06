@@ -15,8 +15,8 @@ importers:
         specifier: ^0.11.0
         version: 0.11.0
       ai:
-        specifier: 3.1.5
-        version: 3.1.5(openai@4.43.0)(react@18.2.0)(solid-js@1.8.16)(svelte@4.2.14)(vue@3.4.22(typescript@5.4.5))(zod@3.23.8)
+        specifier: 3.1.30
+        version: 3.1.30(openai@4.43.0)(react@18.2.0)(solid-js@1.8.16)(svelte@4.2.14)(vue@3.4.22(typescript@5.4.5))(zod@3.23.8)
       buffer:
         specifier: ^6.0.3
         version: 6.0.3
@@ -39,8 +39,8 @@ importers:
 
 packages:
 
-  '@ai-sdk/provider-utils@0.0.6':
-    resolution: {integrity: sha512-SxOZgSxnaVlW04/SjfMoAD45kWOWTWx0QcZrHaQnePooLhyk5AqQpgauPijL803uoJPCKfzd0UBv1gSKvWiU0A==}
+  '@ai-sdk/provider-utils@0.0.13':
+    resolution: {integrity: sha512-cB2dPm9flj+yin5sjBLFcXdW8sZtAXLE/OLKgz9uHpHM55s7mnwZrDGfO6ot/ukHTxDDJunZLW7qSjgK/u0F1g==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.0.0
@@ -48,8 +48,8 @@ packages:
       zod:
         optional: true
 
-  '@ai-sdk/provider@0.0.3':
-    resolution: {integrity: sha512-0B8P6VZpJ6F9yS9BpmJBYSqIaIfeRtL5tD5SP+qgR8y0pPwalIbRMUFiLz9YUT6g70MJsCLpm/2/fX3cfAYCJw==}
+  '@ai-sdk/provider@0.0.10':
+    resolution: {integrity: sha512-NzkrtREQpHID1cTqY/C4CI30PVOaXWKYytDR2EcytmFgnP7Z6+CrGIA/YCnNhYAuUm6Nx+nGpRL/Hmyrv7NYzg==}
     engines: {node: '>=18'}
 
   '@ampproject/remapping@2.3.0':
@@ -353,12 +353,12 @@ packages:
     resolution: {integrity: sha512-5GG/5IbQQpC9FpkRGsSvZI5QYeSCzlJHdpBQntCsuTOxhKD8lqKhrleg2Yi7yvMIf82Ycmmqln9U8V9qwEiJew==}
     engines: {node: '>= 8.0.0'}
 
-  ai@3.1.5:
-    resolution: {integrity: sha512-uE8EfcigIoep4NCqIOWsNUP/alyZ93XtsDsLjiop51y4lEtgJg0GzpbBRfYKaEK1O74HiQ2CmaeOOBlNVBBiIQ==}
+  ai@3.1.30:
+    resolution: {integrity: sha512-6o3ttMqhO81y+8tibrvH+Z+38e5lM2O50sM8F1YBCYietZzFjkAg0VL/400lruyyzPjcxcGhGdBUBLe83iRxHg==}
     engines: {node: '>=18'}
     peerDependencies:
       openai: ^4.42.0
-      react: ^18.2.0
+      react: ^18 || ^19
       solid-js: ^1.7.7
       svelte: ^3.0.0 || ^4.0.0
       vue: ^3.3.4
@@ -748,10 +748,10 @@ packages:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
     deprecated: Please use @jridgewell/sourcemap-codec instead
 
-  sswr@2.0.0:
-    resolution: {integrity: sha512-mV0kkeBHcjcb0M5NqKtKVg/uTIYNlIIniyDfSGrSfxpEdM9C365jK0z55pl9K0xAkNTJi2OAOVFQpgMPUk+V0w==}
+  sswr@2.1.0:
+    resolution: {integrity: sha512-Cqc355SYlTAaUt8iDPaC/4DPPXK925PePLMxyBKuWd5kKc5mwsG3nT9+Mq2tyguL5s7b4Jg+IRMpTRsNTAfpSQ==}
     peerDependencies:
-      svelte: ^4.0.0
+      svelte: ^4.0.0 || ^5.0.0-next.0
 
   stacktracey@2.1.8:
     resolution: {integrity: sha512-Kpij9riA+UNg7TnphqjH7/CzctQ/owJGNbFkfEeve4Z4uxT5+JapVLFXcsurIfN34gnTWZNJ/f7NMG0E8JDzTw==}
@@ -881,16 +881,16 @@ packages:
 
 snapshots:
 
-  '@ai-sdk/provider-utils@0.0.6(zod@3.23.8)':
+  '@ai-sdk/provider-utils@0.0.13(zod@3.23.8)':
     dependencies:
-      '@ai-sdk/provider': 0.0.3
+      '@ai-sdk/provider': 0.0.10
       eventsource-parser: 1.1.2
       nanoid: 3.3.6
       secure-json-parse: 2.7.0
     optionalDependencies:
       zod: 3.23.8
 
-  '@ai-sdk/provider@0.0.3':
+  '@ai-sdk/provider@0.0.10':
     dependencies:
       json-schema: 0.4.0
 
@@ -1128,17 +1128,17 @@ snapshots:
     dependencies:
       humanize-ms: 1.2.1
 
-  ai@3.1.5(openai@4.43.0)(react@18.2.0)(solid-js@1.8.16)(svelte@4.2.14)(vue@3.4.22(typescript@5.4.5))(zod@3.23.8):
+  ai@3.1.30(openai@4.43.0)(react@18.2.0)(solid-js@1.8.16)(svelte@4.2.14)(vue@3.4.22(typescript@5.4.5))(zod@3.23.8):
     dependencies:
-      '@ai-sdk/provider': 0.0.3
-      '@ai-sdk/provider-utils': 0.0.6(zod@3.23.8)
+      '@ai-sdk/provider': 0.0.10
+      '@ai-sdk/provider-utils': 0.0.13(zod@3.23.8)
       eventsource-parser: 1.1.2
       json-schema: 0.4.0
       jsondiffpatch: 0.6.0
       nanoid: 3.3.6
       secure-json-parse: 2.7.0
       solid-swr-store: 0.10.7(solid-js@1.8.16)(swr-store@0.10.6)
-      sswr: 2.0.0(svelte@4.2.14)
+      sswr: 2.1.0(svelte@4.2.14)
       swr: 2.2.0(react@18.2.0)
       swr-store: 0.10.6
       swrv: 1.0.4(vue@3.4.22(typescript@5.4.5))
@@ -1517,7 +1517,7 @@ snapshots:
 
   sourcemap-codec@1.4.8: {}
 
-  sswr@2.0.0(svelte@4.2.14):
+  sswr@2.1.0(svelte@4.2.14):
     dependencies:
       svelte: 4.2.14
       swrev: 4.0.0
