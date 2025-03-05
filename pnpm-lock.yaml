@@ -22,7 +22,7 @@ importers:
         version: 6.0.3
       hono:
         specifier: ^4.0.0
-        version: 4.7.2
+        version: 4.7.4
       openai:
         specifier: ^4.20.1
         version: 4.43.0
@@ -595,8 +595,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.7.2:
-    resolution: {integrity: sha512-8V5XxoOF6SI12jkHkzX/6aLBMU5GEF5g387EjVSQipS0DlxWgWGSMeEayY3CRBjtTUQYwLHx9JYouWqKzy2Vng==}
+  hono@4.7.4:
+    resolution: {integrity: sha512-Pst8FuGqz3L7tFF+u9Pu70eI0xa5S3LPUmrNd5Jm8nTHze9FxLTK9Kaj5g/k4UcwuJSXTP65SyHOPLrffpcAJg==}
     engines: {node: '>=16.9.0'}
 
   humanize-ms@1.2.1:
@@ -716,8 +716,8 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
-  ohash@1.1.4:
-    resolution: {integrity: sha512-FlDryZAahJmEF3VR3w1KogSEdWX3WhA5GPakFx4J81kEAiHyLMpdLLElS8n8dfNadMgAne/MywcvmogzscVt4g==}
+  ohash@1.1.6:
+    resolution: {integrity: sha512-TBu7PtV8YkAZn0tSxobKY2n2aAQva936lhRrj6957aDaCf9IEtqsKbgMzXE/F/sjqYOwmrukeORHNLe5glk7Cg==}
 
   openai@4.43.0:
     resolution: {integrity: sha512-4SMUB/XiqnO5IrEcdzEGGTcHoeXq7D/k82v36zoqSitrMUjenZXGH5JysIH7aF7Wr+gjvq0dT2mV6wLVKA7Seg==}
@@ -742,8 +742,8 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
-  postcss@8.5.2:
-    resolution: {integrity: sha512-MjOadfU3Ys9KYoX0AdkBlFEF1Vx37uCCeN4ZHnmwm9FfpbsGWMZeBLMmmpY+6Ocqod7mkdZ0DT31OlbsFrLlkA==}
+  postcss@8.5.3:
+    resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
   prettier@3.4.0:
@@ -1204,7 +1204,7 @@ snapshots:
       '@vue/shared': 3.4.22
       estree-walker: 2.0.2
       magic-string: 0.30.17
-      postcss: 8.5.2
+      postcss: 8.5.3
       source-map-js: 1.2.1
 
   '@vue/compiler-ssr@3.4.22':
@@ -1443,7 +1443,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.7.2: {}
+  hono@4.7.4: {}
 
   humanize-ms@1.2.1:
     dependencies:
@@ -1544,7 +1544,7 @@ snapshots:
 
   normalize-path@3.0.0: {}
 
-  ohash@1.1.4: {}
+  ohash@1.1.6: {}
 
   openai@4.43.0:
     dependencies:
@@ -1575,7 +1575,7 @@ snapshots:
 
   picomatch@2.3.1: {}
 
-  postcss@8.5.2:
+  postcss@8.5.3:
     dependencies:
       nanoid: 3.3.8
       picocolors: 1.1.1
@@ -1710,7 +1710,7 @@ snapshots:
   unenv-nightly@2.0.0-20241009-125958-e8ea22f:
     dependencies:
       defu: 6.1.4
-      ohash: 1.1.4
+      ohash: 1.1.6
       pathe: 1.1.2
       ufo: 1.5.4
 
