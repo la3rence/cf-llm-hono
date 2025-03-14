@@ -7,7 +7,7 @@
   "dependencies": {
     "@cloudflare/ai": "1.2.2",
     "@google/generative-ai": "^0.21.0",
-    "ai": "3.4.2",
+    "ai": "3.4.33",
     "buffer": "^6.0.3",
     "hono": "^4.0.0",
     "openai": "^4.20.1"
