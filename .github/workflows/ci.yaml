@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Publish
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - uses: pnpm/action-setup@v4.1.0
         name: Install pnpm
